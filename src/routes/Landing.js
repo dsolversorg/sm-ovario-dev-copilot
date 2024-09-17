@@ -95,7 +95,7 @@ function Landing({ className }) {
                     disabled={!connected}
                     onClick={redirectToVideoOnConnect}
                   >
-                    Conversar com a Katia
+                    Conversar com a Aline
                   </button>
                 )}
               </div>
