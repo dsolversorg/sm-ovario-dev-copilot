@@ -1,0 +1,22 @@
+steps:
+- name: node:14
+  entrypoint: npm
+  args: ['install', 'typescript']
+- name: node:14
+  entrypoint: npm
+  args: ['install']
+  # run webpack prod script to create static files
+- name: node:14
+  entrypoint: npm
+  args: ['run','build']
+  env:
+    - 'REACT_APP_API_KEY=eyJzb3VsSWQiOiJkZG5hLWd1aWxoZXJtZS1jb3JyZWEtbmV0by0tcmVhY3QtdGVhbS1qYnNzIiwiYXV0aFNlcnZlciI6Imh0dHBzOi8vZGguc291bG1hY2hpbmVzLmNsb3VkL2FwaS9qd3QiLCJhdXRoVG9rZW4iOiJhcGlrZXlfdjFfNmNhNGFlNzctNjUyZC00OTM0LWI1NjEtNDlhNzU2MWFmMjY0In0='
+    - 'REACT_APP_GA_TRACKING_ID=G-G5GWJ2XYRS'
+    - 'DISABLE_ESLINT_PLUGIN=true'
+    - 'REACT_APP_SESSION_SERVER=dh.soulmachines.cloud'
+    - 'REACT_APP_PERSONA_AUTH_MODE=0'
+    - 'REACT_APP_ORCHESTRATION_MODE=false'
+    - 'GENERATE_SOURCEMAP=false'
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
