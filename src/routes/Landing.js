@@ -48,7 +48,7 @@ function Landing({ className }) {
             <div className="col-12 col-lg-6">
               <div className="row" style={{ marginBottom: '9px' }}>
                 <div>
-                  <h1 className="fw-bol">Sou a Aline uma Pessoa Digital Hiper-realista, criada pela DS, com o propósito de esclarecer dúvidas sobre a vacina do Ovario.</h1>
+                  <h1 className="fw-bol">Sou a Aline uma Pessoa Digital Hiper-realista, criada pela DS, estou aqui para treiná-lo sobre do Câncer de ovário.</h1>
                   {/* <h2 className="fw-bol">
                     Segue abaixo algumas frases de navegação:
                   </h2>
@@ -69,9 +69,9 @@ function Landing({ className }) {
                 <div>
                   <h4 className="fw-light" style={{ marginBottom: '31px' }}>
                     Sou especialista em
-                    <b> Ovario</b>
+                    <b> Câncer de ovário</b>
                     ,
-                    faça-me uma pergunta e farei o meu melhor para respondê-la.
+                    faça-me uma pergunta e farei o meu melhor para respondê-la, ápos isso iremos realizar um teste de conhecimento!.
                   </h4>
                 </div>
               </div>
