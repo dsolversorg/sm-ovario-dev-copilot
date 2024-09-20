@@ -193,7 +193,7 @@ const getBottomValue = () => {
     return '30px';
   }
   if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    return '80px';
+    return '-40px';
   }
   return '25px';
 };
@@ -268,7 +268,7 @@ export default styled(DPChat)`
     align-items: center;
     flex-direction: column;
     position: relative;
-    bottom: ${getBottomValue()};
+    margin-bottom: ${getBottomValue()};
   }
   
   .contWid{

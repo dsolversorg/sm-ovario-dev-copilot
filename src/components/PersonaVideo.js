@@ -102,7 +102,7 @@ export default styled(PersonaVideo)`
   margin-top: ${transparentHeader ? '' : headerHeight};
   .persona-video {
     /* the video element will conform to the container dimensions, so keep this as it is */
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 `;
