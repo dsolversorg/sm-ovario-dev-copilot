@@ -71,7 +71,7 @@ function Landing({ className }) {
                     Sou especialista em
                     <b> Câncer de ovário</b>
                     ,
-                    faça-me uma pergunta e farei o meu melhor para respondê-la, ápos isso iremos realizar um teste de conhecimento!.
+                    faça-me uma pergunta e farei o meu melhor para respondê-la.
                   </h4>
                 </div>
               </div>
