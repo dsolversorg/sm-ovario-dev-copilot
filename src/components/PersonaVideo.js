@@ -91,7 +91,7 @@ PersonaVideo.propTypes = {
 
 const getBottomValue = () => {
   if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    return '100px';
+    return '105px';
   }
   return '0px';
 };
