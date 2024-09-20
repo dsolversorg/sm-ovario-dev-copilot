@@ -101,7 +101,7 @@ function Landing({ className }) {
               </div>
               <div className="row">
                 <div>
-                  Acho difícil ouvi-lo quando você está em uma sala barulhenta,
+                  Acho muito difícil ouvi-lo quando você está em uma sala barulhenta,
                   ou quando há outras conversas acontecendo ao seu redor,
                   então fale comigo de um lugar tranquilo.
                 </div>
