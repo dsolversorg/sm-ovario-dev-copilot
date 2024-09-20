@@ -193,7 +193,7 @@ const getBottomValue = () => {
     return '30px';
   }
   if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    return '80px';
+    return '100px';
   }
   return '25px';
 };

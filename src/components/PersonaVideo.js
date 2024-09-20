@@ -89,6 +89,13 @@ PersonaVideo.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
+const getBottomValue = () => {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    return '100px';
+  }
+  return '0px';
+};
+
 export default styled(PersonaVideo)`
   /* if you need the persona video to be different than the window dimensions, change these values */
   width: 100vw;
@@ -104,5 +111,6 @@ export default styled(PersonaVideo)`
     /* the video element will conform to the container dimensions, so keep this as it is */
     width: 100vw;
     height: 100vh;
+    margin-bottom: ${getBottomValue()};
   }
 `;
