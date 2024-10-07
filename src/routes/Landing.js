@@ -37,9 +37,7 @@ function Landing({ className }) {
     script.setAttribute('data-sm-greeting', 'Welcome');
     script.setAttribute('data-sm-layout', 'fullFrame');
     script.setAttribute('data-sm-profile-picture', 'https://assets.cdn.soulmachines.cloud/AvatarCoverImages/image-sam-l.jpg');
-    
     document.body.appendChild(script);
-
   }, []);
 
   const [skip, setSkip] = useState(false);
