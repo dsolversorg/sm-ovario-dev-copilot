@@ -31,12 +31,15 @@ function Landing({ className }) {
 
     const script = document.createElement('script');
     script.src = 'https://static.soulmachines.com/widget-snippet-1.12.0.min.js';
-    script.setAttribute('data-sm-api-key', 'SUA_API_KEY');
+    script.async = true;
+    script.setAttribute('data-sm-api-key', 'eyJzb3VsSWQiOiJkZG5hLWd1aWxoZXJtZS1jb3JyZWEtbmV0by0tdHJlaW5hbWVudG8tcGNzLWEiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9hODIzYTMxZC1iZmRjLTQ5MmMtODgzOS1kOGZmYTA5NmE5ZDIifQ==');
     script.setAttribute('data-sm-position', 'bottomRight');
     script.setAttribute('data-sm-greeting', 'Welcome');
     script.setAttribute('data-sm-layout', 'fullFrame');
     script.setAttribute('data-sm-profile-picture', 'https://assets.cdn.soulmachines.cloud/AvatarCoverImages/image-sam-l.jpg');
+    
     document.body.appendChild(script);
+
   }, []);
 
   const [skip, setSkip] = useState(false);
